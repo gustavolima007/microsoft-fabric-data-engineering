@@ -1,0 +1,9 @@
+--> Listar as Tabelas
+SELECT *
+FROM sys.tables
+WHERE schema_name(schema_id) = 'dbo';  -- ou o nome do schema
+
+
+--> Consultar Dados da Tabela
+SELECT * 
+FROM Silver_Lakehouse_GL.dbo.produto AS A;
